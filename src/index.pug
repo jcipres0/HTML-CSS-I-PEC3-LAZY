@@ -15,7 +15,7 @@ html(lang="es")
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet"/>
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
         <script src="./mapkick.js"></script>
-        <script defer>mapboxgl.accessToken = "pk.eyJ1IjoibG1lbnRhbDE2IiwiYSI6ImNtMmtvZjh3aDAzaG8ycXM5ZDB2ajA5eDYifQ.WWX3kQ_2JedUKdmp_nQr6Q"</script>
+        <script>mapboxgl.accessToken = "pk.eyJ1IjoibG1lbnRhbDE2IiwiYSI6ImNtMmtvZjh3aDAzaG8ycXM5ZDB2ajA5eDYifQ.WWX3kQ_2JedUKdmp_nQr6Q"</script>
 
     body 
         header: include header.pug 
@@ -70,6 +70,6 @@ html(lang="es")
                         p Terminamos comiendo muy bien en uno de los dos sitios que hay para comer, gente muy maja y atenta, sin duda un buen rato.
                         p Me gustaría terminar comentando la cantidad de setas que vimos por los senderos!! a mi hijo pequeño le encantó ver tantas y por cierto, la carretera de llegada es mala así que es aconsejable tomar algo para los mareos antes de emprender viaje.
         footer: include footer.pug
-        script(type="module" src="./app.js" async)
-        script(type="module" src="./menu.js" async)
+        script(type="module" src="./app.js")
+        script(type="module" src="./menu.js")
         
