@@ -1,0 +1,76 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="./styles/styles.scss")
+         //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    body 
+        header: include header.pug 
+        main
+
+            section.fotoinicial
+                picture 
+                    source(media="(max-width: 768px)" srcset="./img/nocito-presenta-600.webp 600w, ./img/nocito-presenta.webp 1500w")
+                    source(media="(min-width: 769px)" srcset="./img/nocito-presenta.webp 1500w")
+                    img(src="img/nocito-presenta.jpg" alt="Vista de Nocito")
+
+            div.container-detail
+                section.parte1 
+                    article
+                        h2 Presentación de este sitio web 
+                        br
+                        p Este pequeño espacio trata de dar a conocer la hermosa localidad de <strong>Nocito</strong> y el entorno que lo rodea, desde los pueblos aledaños como <strong>Belsué</strong> hasta la propia <strong>Sierra de Guara</strong> que es donde está ubicada la localidad. También es preciso presentar una pequeña pincelada de lo que ha sido la historia de esta zona, desde los tiempos del Imperio Romano, hasta hoy día, pasando por el momento que marcará la despoblación de la localidad, que fue la guerra civil española, detalles que se pueden consultar en la sección 
+                            a(href="historia.pug") historia de Nocito.
+                        p Estas pequeñas localidades del pirineo aragonés se caracterizan por ser marcos incomparables de naturaleza, sitios donde practicar deportes como ciclismo, senderismo, barranquismo, etc. que terminan siendo su fuente de ingresos principal, pero además, <strong>Nocito</strong> es un sitio donde parar si necesitas que la vida pare un momento, y una vez en esta localidad poder hacer senderos a pie o en bicicleta, desde recorridos sencillos para la familia hasta descensos más complicados en bicileta poniendo como ejemplo alguno de los vídeos que se pueden ver en la seccion de 
+                            a(href="eventos.pug") con los sentidos  
+                            | e incluso el enlace puesto en esta sección a la famosa web de rutas llamada wikiloc.
+                        p Al igual que otras zonas del pirineo aragónes, en la <strong> Sierra de Guara</strong> se promocionan numerosas actividades tanto de verano como de invierno para atraer el turismo y que las personas puedan conocer todo el entorno, de manera que, en este espacio web también se ha propuesto una sección llamada 
+                            a(href="eventos.pug") eventos en la Sierra de Guara 
+                            | que ofrece unas breves ideas y un enlace a la web oficial donde consultar todas las actividades por fecha.
+                section.parte2 
+                    article     
+                        h2 Experiencia personal en Nocito 
+                        br
+                        p He tenido la oportunidad de visitar <strong>Nocito</strong> recientemente con la familia y pasear por el pueblo, caminar por uno de sus senderos, comer en su restaurante y encontrar lo que andaba buscando, y es que tenía pendiente la visita al ser el origen de mi familia, el origen de mi apellido Ciprés, así que me gustaría describir más detenidamente mi experiencia y dar pie así a contar más en detalle qué hacer en <strong>Nocito</strong> exponiendo las fotos que pude hacer personalmente:
+                        div.experiencia 
+                            div.txt 
+                                p Pude saber que el origen de mi apellido venía de la parte de la Jacetania y que después se separó en varias ramas hasta llegar a <strong>Nocito</strong> donde sabía estaba, en una de las fachadas de una casa del pueblo, el escudo de la familia Ciprés de la que parce ser proviene mi familia, así que tenía muchas ganas de ir a este pueblo y conocer tanto el escudo como la herálica del mismo. Fue una experiencia tan interesante como extraña.
+                                br
+
+                            div.foto1 
+                                figure
+                                    img(src="./img/foto-mia-3-presenta.jpg" srcset="./img/foto-mia-3-presenta-2.webp 1x, ./img/foto-mia-3-presenta-1.webp 2x" alt="Escudo de la familia Ciprés" loading="lazy")
+                                    figcaption Escudo familia Ciprés - Juan Ciprés.
+                                    
+                        div.experiencia1 
+                            div.txt1
+                                p Durante la mañana pude hacer en familia un pequeño sendero a través de los alrededores de <strong>Nocito</strong> que además, al igual que el resto de senderos, estaba perfectamente indicado tal como muestra la foto. También fue muy divertido poder ver la cantidad de setas que crecen en esta época otoñal por todos los caminos de este pequeño pueblo, e incluso pude comer alguna de estas setas en el restaurante pues parece ser, los lugareños, son buenos concedores de todos los tipos de setas y las usan para concina propia, finalmente me pude enterar que sin duda es un punto de encuentro para los amantes de la micología
+                                br
+                            div.foto2 
+                                figure
+                                    img(src="./img/foto-mia-2-presenta.jpg" srcset="./img/foto-mia-2-presenta-2.webp 1x, ./img/foto-mia-2-presenta-1.webp 2x" alt="Poste de ruta GR 268" loading="lazy")
+                                    figcaption Poste de la ruta GR 268 - Juan Ciprés.
+                            div.foto3
+                                figure
+                                    img(src="./img/foto-mia-5-presenta.jpg" srcset="./img/foto-mia-5-presenta-2.webp 1x, ./img/foto-mia-5-presenta-1.webp 2x" alt="Setas en el sendero" loading="lazy")
+                                    figcaption Setas en el sendero - Juan Ciprés.
+                        div.experiencia2 
+                            div.txt2
+                                p Finalmente y, previo paso por el restaurante donde comimos genial, fue bonito ver el pueblo y sus lugares más importantes, como el puente medieval o las magníficas vistas y paisajes que se pueden disfrutar desde el pueblo. Tan solo añadir que dispone de un pequeño camping que tiene una pinta increíble de ser muy muy tranquilo y barato, además de la posibilidad de realizar paseos a caballo, que además se pueden ver sueltos por los pastos del pueblo. Dejo dos fotos como muestra de lo encantador que es el paraje.
+                                br
+                            div.foto4 
+                                figure
+                                    img(src="./img/foto-mia-4-presenta.jpg" srcset="./img/foto-mia-4-presenta-2.webp 1x, ./img/foto-mia-4-presenta-1.webp 2x" alt="Puente medieval de Nocito" loading="lazy")
+                                    figcaption Puente medieval de Nocito- Juan Ciprés.
+                            div.foto5
+                                figure
+                                    img(src="./img/foto-mia-presenta.jpg" srcset="./img/foto-mia-presenta-2.webp 1x, ./img/foto-mia-presenta-1.webp 2x" alt="Vistas desde el pueblo" loading="lazy")
+                                    figcaption Vistas desde el pueblo - Juan Ciprés.
+        footer: include footer.pug
+        script(src="./menu.js" async)
+                

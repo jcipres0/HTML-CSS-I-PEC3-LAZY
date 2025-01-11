@@ -1,0 +1,75 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="styles/styles.scss")
+
+        //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        //-uso de la API de mapkcik para situar en el mapa Nocito
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet"/>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+        <script src="./mapkick.js"></script>
+        <script defer>mapboxgl.accessToken = "pk.eyJ1IjoibG1lbnRhbDE2IiwiYSI6ImNtMmtvZjh3aDAzaG8ycXM5ZDB2ajA5eDYifQ.WWX3kQ_2JedUKdmp_nQr6Q"</script>
+
+    body 
+        header: include header.pug 
+        main
+            section.pasafotos 
+                div.slider
+                    div.slider-inner
+                        picture 
+                            source(media="(max-width: 768px)" srcset="img/01.webp 600w, img/01-1.webp 1500w")
+                            source(media="(min-width: 769px)" srcset="img/01-1.webp 1500w")
+                            img(src="img/01.jpg" alt="Pirieno Aragonés")
+                    div.slider-inner
+                        picture 
+                            source(media="(max-width: 768px)" srcset="img/02.webp 600w, img/02-1.webp 1500w")
+                            source(media="(min-width: 769px)" srcset="img/02-1.webp 1500w")
+                            img(src="img/02.jpg" alt="Pirieno Aragonés" loading="lazy")
+                    div.slider-inner
+                        picture 
+                            source(media="(max-width: 768px)" srcset="img/03.webp 600w, img/03-1.webp 1500w" loading="lazy")
+                            source(media="(min-width: 769px)" srcset="img/03-1.webp 1500w")
+                            img(src="img/03.jpg" alt="Pirieno Aragonés" loading="lazy")
+            section.container-map
+                div.container-entrada  
+                    div
+                        h2 Un primer vistazo a Nocito ...
+                        br
+                    p Está situado en el valle al que da nombre, en la vertiente norte del <strong>Parque Natural de la Sierra y los Cañones de Guara</strong>, junto al nacimiento del río Guatizalema.
+                    p Es un paraje de incomparable belleza y podrás encontrar el auténtico sabor del campo.
+                    p Te encantará su <strong>puente medieval y la ermita de San Pedro</strong>, también medieval, de tradición románica.
+                    p No debes dejar de visitar la iglesia parroquial dedicada a San Juan Bautista. Nocito es un buen ejemplo de conservación de la arquitectura popular: dinteles decorados, blasones familiares, chimeneas, dólmenes y espantabrujas trasladan a un pasado de vida aislada, dura y austera.
+                    p Saliendo de Nocito hacia el este, una pista conduce <strong>ermita de San Úrbez</strong>, que en otro tiempo fue un gran monasterio. Lugar ideal para escapadas, con rutas de senderismo.
+                    p Es también el destino perfecto para los amantes de la ornitología y del turismo micológico.
+                    div
+                        br
+                        h2 descúbrelo, pulsa en la imagen
+                        br
+                    div.cls-boton
+                        a.boton(href="./categorias.pug") 
+                <div id="map"></div>
+                <script>new Mapkick.Map("map", [{latitude: 42.320626, longitude: -0.254281}],{zoom: 8, controls: true})</script>
+            section.comentarios 
+                div.titulo: h2 ¿Qué opina la gente?
+                        br  
+                div.articles 
+                    article.post
+                        p Es un pueblo encantador, pequeño y acogedor. Sientes la libertad de estar en el monte y en contacto con la naturaleza.
+                        p Fuimos a <strong>Nocito</strong> llamados por los buenos senderos que parten desde ahí, tanto para hacerlos andando como en bicileta, aunque nosotros nos decidimos por algunos cortos y fáciles para que los peques también pudieran pasear por el monte.
+                        p Después de un rato de caminata pudimos volver al pueblo a comer en uno de sus restaurantes y reponer fuerzas, así que un buen día de campo y en familia.
+                    article.post 
+                        p Tenía ganas de venir a <strong>Nocito</strong> porque el origen de mi apellido Ciprés parece ser que viene de este pueblo tan encantador allá por el siglo trece, incluso se puede ver el escudo de la familia Ciprés en una de las fachadas de las casas, así que me llamó mucho la atención poder ver el pueblo. 
+                        p Sin duda se pueden aprovechar cantidad de caminatas bien señalizadas para hacer con la familia o si quires un poco más de dificultad también puedes encontrar senderos, además había bastantes ciclistas así que parece que se puede aprovechar.
+                        p Terminamos comiendo muy bien en uno de los dos sitios que hay para comer, gente muy maja y atenta, sin duda un buen rato.
+                        p Me gustaría terminar comentando la cantidad de setas que vimos por los senderos!! a mi hijo pequeño le encantó ver tantas y por cierto, la carretera de llegada es mala así que es aconsejable tomar algo para los mareos antes de emprender viaje.
+        footer: include footer.pug
+        script(type="module" src="./app.js" async)
+        script(type="module" src="./menu.js" async)
+        

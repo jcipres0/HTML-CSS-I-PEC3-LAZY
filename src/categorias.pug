@@ -1,0 +1,69 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="./styles/styles.scss")
+          //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    body 
+        header: include header.pug 
+        main
+            div.container-cat  
+                div.text-entrada 
+                    h2 Un poco más de Nocito 
+                    hr
+                    br
+                    p La localidad de Nocito pertenece al municipio de Nueno, en la comarca de <strong>la Hoya de Huesca</strong>.
+                    p Lo encontramos situado a 931m de altura, en un pequeño llano de la cara norte de la sierra de Guara, junto al nacimiento del río Guatizalema y dentro de la zona de prorección del <strong>Parque natural de la Sierra y los Cañones de Guara</strong>.
+                    p Para acceder a este valle hay que coger la C-136 de Huesca a Francia, partiendo de la localidad de Arguís y siguiendo la antigua carretera hasta el túnel de la Manzanera y allí cogeremos un desvío hacia la derecha hacía Belsué y Nocito.
+                    p El pueblo está dividido por el puente de Nocito en dos barrios, el de San Juan, que desemboca en la plaza de la iglesia y el de San Pedro. En algunas de las casas se conservan los escudos de armas de los Villacampa, de <strong>los Cipreses</strong> y de los Ortas.
+                    p En cuanto a su climatología, podemos observar temperaturas de hasta -17ºC en invierno hasta 32ºC en verano dando una media anual de 11ºC, así que, sin duda, será un lugar agradable para la gente que no le gusta el calor.
+                    p Finalmente, hay que saber que, según el <abbr title="Instituto Nacional de Estadística">INE</abbr> del año 2021, cuenta con 26 personas censandas y que si alguien quiere mandar una carta corresponde al código postal 22150.
+                div.opciones 
+                    h2 Selecciona la consulta que quieras.
+                    div.indi
+                        a.box(href="historia.pug")
+                            h2.titulo Historia de Nocito
+                            p.texto Conoce sobre la historia de esta localidad, donde se puede ver y oír todavía el paso del tiempo, lento y tranquilo, del que hay evidencia de que era una zona importante ya en el siglo I a.C.
+                            br
+                            svg.rela(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet")
+                                defs
+                                    filter#myShadow
+                                        feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
+                                image(href="./img/historiax600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy")     
+                    div.indi 
+                        a.box(href="sentidos.pug")
+                            h2.titulo Con los sentidos 
+                            p.texto Qué ver y qué hacer, esa es la cuestión... entra en esta sección y descubrirás que no vas a tener tiempo para aburrirte, caminatas, bicicleta, micología, arte, etc. no vas a parar, pero no te preocupes, podrás reponer fuerzas en el restaurante asador de Nocito.
+                            br
+                            svg.rela(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet")
+                                defs
+                                    filter#myShadow
+                                        feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
+                                image(href="./img/sentidosx600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy") 
+                    div.indi
+                        a.box(href="eventos.pug")
+                            h2.titulo Eventos en la Sierra de Guara 
+                            p.texto Te puedes venir a realizar cualquiera de las actividades que se hacen en la zona de la Sierra de Guara, hay actividades para todos los gustos, para familia, para personas aventureras, para personas que quieran la tranquilidad de la montaña, etc. entra y mira a ver cual es la que más te gusta.
+                            br
+                            svg.rela(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet")
+                                defs
+                                    filter#myShadow
+                                        feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
+                                image(href="./img/eventosx600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy") 
+                aside.noticias 
+                    section 
+                        h3 Últimas noticias de Nocito y Nueno
+                        article 
+                            div.noticia 
+                                h4 Coworking de Nueno
+                                p El arrendamiento de estancias de coworking de Nueno queda abierto desde el 12 de junio de 2024, puedes informarte directamente llamando al ayuntamiento de Nueno.
+                            div.noticia 
+                                h4 Apertura de piscinas de Nueno
+                                p Se ha publicado ya en el bando municipal de Nueno la apertura de las piscinas con fecha 26 de marzo de 2024.
+        footer: include footer.pug
+        script(src="./menu.js" async)

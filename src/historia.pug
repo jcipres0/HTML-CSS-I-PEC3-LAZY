@@ -1,0 +1,92 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="./styles/styles.scss")
+          //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    body 
+        header: include header.pug 
+        main
+            div.container-detail
+                nav 
+                    ul.breadcrumb 
+                        li: a(href="index.pug") Inicio
+                        li: a(href="categorias.pug") Nocito en detalle
+                h2 Historia de Nocito
+                section.texto-doc
+                    article.epoca 
+                        div.propia 
+                            svg.rela(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet")
+                                defs
+                                    filter#myShadow
+                                        feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
+                                image(href="./img/historiax600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy")  
+                        div.text
+                            h3 Los inicios del valle
+                            br
+                            p El valle de Nocito estuvo poblado desde el final del Neolítico, en la Edad del Bronce, entre los años 4000 y 1000 a.C. así lo inidica los estudios megalíticos realizados en el <strong>yacimiento de Ibirque</strong> por <cite>M.Navarro</cite> en 1949.
+                            p Más evidencia de que era una zona importante en el siglo I a.C. es que se han encontrado calzadas romanas, monedas de la época y dos cabezas escultóricas de hombre, en mármol y de 24cm de altura, estas esculturas se encuentran en el <strong>Museo Diocesano de Huesca</strong>.
+                        div.text1
+                            p En cualquier caso, es claro que Nocito fue una explotación agrícola que podía albergar un templo en el lugar que actualmente ocupa la ermita de <strong>San Úrbez</strong>, siendo pues una villa romana en tiempos imperiales y es que esta ermita está ligada a la historia de Nocito, así quedará documentado en el primer documento escrito encontrado del año 992 y en el que queda claro que por esta zona vivieron visigodos y árabes tras la caída del Imperio Romano.
+                            p A principios del siglo XI, con la desmembración del califato de Córdoba y la consiguiente fuerza de los reinos cristianos del norte, esta zona pasará a manos del rey Sancho el Mayor, quién gobernó el Reino de Pamplona hasta el año 1035 y más tarde, su heredero el rey Ramiro, será quien se desplace a Nocito junto con un buen número de nobles del reino y pasará a ser una zona de influencia política y agrícola. Es por este motivo por el que se pueden ver hoy día en las fachadas de algunas casas los escudos heráldicos de nobles linajes, como la <strong>casa Ciprés</strong> y la casa Molinero, tal como se recoge en le libro <cite>Documentos de Ramiro II de Aragón</cite> de <cite>Ubieto Artieta. La zona se estabilizará hasta el siglo XIX como una zona agrícola.
+                            figure
+                                img(src="./img/nocito-2.jpg" srcset="./img/nocito-2.webp 1x, ./img/nocito-2-1.webp 2x" alt="Dolmen de Ibirque" loading="lazy")
+                                figcaption Dolmen de Ibirque - 
+                                    a(href="https://www.flickr.com/photos/25428865@N07/6047129390/in/photolist-adn7Ty-26Tz6J1-hQ7rPa-eUccTF-26Tz8hG-24cPFMs-25S15XJ-26Tz8BQ-26Tz7rJ-24cPHfs-JPJCoN-24cPFYj-24cPJe1-25S16eL-2dqxRZ5-24cPJDu-JPJCNf-24cPKsU-JPJDwE-26Xw4QT-25S16jq-26TzdW7-25S169W-24cPHPy-Hizwg2-26Xw69V-26TzfhJ-24cPJVb-26Tzcvm-26Xw5bH-26Xw5Y4-26Xw5QP-26Xw5qv-26TzdbQ-24cPKk9-26TzcXy-26Tz8SE-24cPGFm-JPJCC5-24cPGf1-26TzcFG-PJU6B6-2cp4AWm-2dqxRJ5-2dqxREC-2dqxRxU-26Xw5G2-2dqxRTy-2dqxRAu-2aJrccw" target="_blank") desde flickr  
+                                    | por Lamuga.
+                    article.epoca.epoca1
+                        div 
+                            h3 Una época más moderna 
+                            br
+                            p La historia de Nocito continúa sin cambios hasta el año 1936 y se ve importuanda en esta fecha por la guerra civil. El pueblo es tomado por las fuerzas leales a la República, en este momento los mozos del pueblo fueron reclutados para ir al frente y el pueblo tuvo que salir adelante sin las manos jóvenes. Tras la guerra, los milicianos se llevaron en su retirada todo el ganado y hubo que empezar de nuevo. Quedando la zona en pobreza, el fantasma de la emigración primero y el casi total despoblamiento después marcaron los hitos de la vida diaria. Finalmente en la década 1970-1980 la alcaldía de Nocito fue absorvida por el <strong>Ayuntamiento de Nueno</strong>, entidad a la que pertenece administrativamente en la actualidad.
+                            p La época posterior a la guerra civil va a marcar el declive de Nocito, unido a la marcha de la gente joven y pobreza que queda en la zona, se van a producir durante los años 60 las ventas de las mejores tierras de Nocito a al <strong>Patrimonio Forestal</strong> y una vez cobrado el dinero pocas cosas rentendrán ya en Nocito a las gentes que allí habitaban.
+                            figure
+                                img(src="./img/nocito-51.jpg" srcset="./img/nocito-51.webp 1x, ./img/nocito-51-1.webp 2x" alt="Iglesia de San Juan Bautista de Nocito" loading="lazy")
+                                figcaption Iglesia de San Juan Bautista - 
+                                    a(href="https://es.wikipedia.org/wiki/Nocito" target="_blank") Wikimedia Commons 
+                                    | por Ricardo Sanz.
+                div
+                    br
+                    h3 Fotos de interés histórico 
+                    br
+                section.fotos-doc 
+                    div.foto-muestra
+                        figure
+                            img(src="./img/nocito-51.jpg" srcset="./img/nocito-51-2.webp 480w, ./img/nocito-51-1.webp 600w" alt="Iglesia de San Juan Bautista de Nocito" loading="lazy")
+                            figcaption Iglesia de San Juan Bautista - 
+                                a(href="https://es.wikipedia.org/wiki/Nocito" target="_blank") Wikimedia Commons 
+                                | por Ricardo Sanz.
+                    div.foto-muestra
+                        figure
+                            img(src="./img/nocito-6.jpg" srcset="./img/nocito-6-2.webp 480w, ./img/nocito-6-1.webp 600w" alt="Puente medieval Nocito" loading="lazy")
+                            figcaption Puente medieval de Nocito - 
+                                a(href="https://an.wikipedia.org/wiki/Nocito" target="_blank") Wikimedia Commons 
+                                | por Don Camillo.
+                    div.foto-muestra
+                        figure
+                            img(src="./img/nocito-2.jpg" srcset="./img/nocito-2-2.webp 480w, ./img/nocito-2-1.webp 600w" alt="Dolmen de Ibirque" loading="lazy")
+                            figcaption Dolmen de Ibirque - 
+                                a(href="https://www.flickr.com/photos/25428865@N07/6047129390/in/photolist-adn7Ty-26Tz6J1-hQ7rPa-eUccTF-26Tz8hG-24cPFMs-25S15XJ-26Tz8BQ-26Tz7rJ-24cPHfs-JPJCoN-24cPFYj-24cPJe1-25S16eL-2dqxRZ5-24cPJDu-JPJCNf-24cPKsU-JPJDwE-26Xw4QT-25S16jq-26TzdW7-25S169W-24cPHPy-Hizwg2-26Xw69V-26TzfhJ-24cPJVb-26Tzcvm-26Xw5bH-26Xw5Y4-26Xw5QP-26Xw5qv-26TzdbQ-24cPKk9-26TzcXy-26Tz8SE-24cPGFm-JPJCC5-24cPGf1-26TzcFG-PJU6B6-2cp4AWm-2dqxRJ5-2dqxREC-2dqxRxU-26Xw5G2-2dqxRTy-2dqxRAu-2aJrccw" target="_blank") desde flickr  
+                                | por Lamuga.
+                    div.foto-muestra
+                        figure
+                            img(src="./img/nocito-3.jpg" srcset="./img/nocito-3-2.webp 480w, ./img/nocito-3-1.webp 600w" alt="Vista de Nocito" loading="lazy")
+                            figcaption Ermita de San Úrbez - 
+                                a(href="https://commons.wikimedia.org/wiki/File:Ca%C3%B1%C3%B3n_del_A%C3%B1isclo-Ermita_de_San_%C3%9Arbez.jpg" target="_blank") Wikimedia Commons 
+                                | Luisefe2
+                section.sigue 
+                    hr
+                    h3 Sigue disfrutando
+                    br
+                    div.navegando 
+                        div.navegando1    
+                            a(href="sentidos.pug") Nocito con los sentidos   
+                        div.navegando1
+                            a(href="eventos.pug") Eventos en la Sierra de Guara
+        footer: include footer.pug
+        script(src="./menu.js" async)

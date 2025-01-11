@@ -1,0 +1,41 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="./styles/styles.scss")
+
+         //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    body 
+        header: include header.pug 
+        main
+            div.container-detail 
+                h2 Referencias 
+                hr
+                div.links 
+                    ol 
+                        li Turismo de Aragón, de su sección - 
+                            a(href="https://www.turismodearagon.com/ficha/nocito/" target="_blank") ficha de Nocito 
+                        li La Hoya de Huesca, seccion de "nuestros pueblos" se encuentra  
+                            a(href="https://turismo.hoyadehuesca.es/la-hoya-de-huesca/pueblos/nueno/nocito-art" target="_blank") Nocito 
+                            | como localidad pertenciente a Nueno
+                        li En 
+                            a(href="https://es.wikipedia.org/wiki/Nocito" target="_blank") Wikipedia 
+                            | alberga una categoría documental sobre Nocito
+                        li Huesca La Magia, dentro de su sección "blog" se encuentra referencia a 
+                            a(href="https://www.huescalamagia.es/blog/la-incomparable-belleza-de-nocito-en-la-sierra-de-guara/" target="_blank") Nocito 
+                            | como localidad perteneciente a Nueno
+                        li 
+                            a(href="https://guara.org/calendario-eventos/" target="_blank") Calendario de eventos 
+                            | para la Sierra de Guara, de la Asociación de Empresarios de la Sierra de Guara
+                h2 Bibliografía 
+                hr
+                div.links
+                    ol 
+                        li De la Calle Ysern I., Morán Viscasillas A.M. (1994),  <cite>CARA Y CRUZ EN NOCITO: El ayer y el hoy de una comunidad en la Sierra de Guara</cite>, biblioteca de <abbr title="Instituto de Estudios Altoaragoneses">IEA</abbr>
+        footer: include footer.pug
+        script(src="./menu.js" async)

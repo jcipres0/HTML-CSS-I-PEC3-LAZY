@@ -1,0 +1,98 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" href="./img/montanas.svg")
+        title Nocito 
+        link(rel="stylesheet", href="./styles/styles.scss")
+          //-para usar los iconos de bootstrap
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    body 
+        header: include header.pug 
+        main
+            div.container-detail
+                nav 
+                    ul.breadcrumb 
+                        li: a(href="index.pug") Inicio
+                        li: a(href="categorias.pug") Nocito en detalle
+                h2 Eventos en la Sierra de Guara
+                section.texto-doc 
+                    article.epocaE 
+                        div.propiaS
+                            svg.rela(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet")
+                                defs
+                                    filter#myShadow
+                                        feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
+                                image(href="./img/eventosx600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy")  
+                        br
+                        p Nocito está ubicado en la <strong>Sierra de Guara</strong> y si deseas pasar unos días en Nocito es posible que te puedan interesar las diferentes actividaes que se pueden realizar en la zona y durante cualquier momento del año.
+                        p De esta forma, podrás encontrar eventos de muchos tipos como:
+                        br
+                        ul.listado
+                            li Eventos gastronómicos
+                            li Eventos relacionados con la cultura
+                            li Eventos deportivos 
+                            li Eventos con niños
+                        br
+                section.descripcion 
+                    article.epocaE
+                        h3 ¿Qué tipo de eventos puedes disfrutar?
+                        br
+                        div.section
+                            div
+                                p <strong>Eventos gastronómicos:</strong> en la <strong>Sierra de Guara</strong> puedes encontrar visitas guiadas durante el año a las diferentes Bodegas vinícolas como la <strong>Bodega de LAUS</strong> o la <strong>Bodega de ENATE</strong>, donde podrás disfrutar del vino y el arte con los cinco sentidos, además de una interesante cata de vinos y su maridaje correspondiente...
+                                br
+                            div    
+                                figure
+                                    img(src="./img/enate.jpg" srcset="./img/enate.webp 1x, ./img/enate-1.webp 2x" alt="Bodega ENATE" loading="lazy")
+                                    figcaption Bodega ENATE - 
+                                        a(href="https://www.flickr.com/photos/zazasvq/15852160815/in/photolist-EcFji-q9Nt8v-5ZgLeX-pqXLfi-HXtx1L-9Y5ZtV-9Y5ZtZ-zjr1kh-46PbH3-nibaRr-5ZkW1U" target="_blank") desde flickr 
+                                        | de Gonzalo Malpartida.
+                        div.section 
+                            div 
+                                p <strong>Eventos relacionados con la cultura:</strong> disfrutar de rutas geológicas como la visita a los Mallos de Guatizamela (con bocadillo y obsequio incluidos) o hacer un taller de canto coral dentro del Festival de Música y Patrimonio EnClaves FESTIVAL AnAbArcA impartido por <cite>Eva Narejos</cite> (taller de danza) y <cite>Javier Ares</cite> (taller de canto) serán actividades que podrás encontrar cerca de Nocito.
+                                br
+                            div 
+                                figure
+                                    img(src="./img/anabarca.jpg" srcset="./img/anabarca.webp 1x, ./img/anabarca-1.webp 2x" alt="Festival anabarca" loading="lazy")
+                                    figcaption Espectáculo de danza LaMov - Cortes de Aragón.
+                        div.section 
+                            div 
+                                p <strong>Eventos deportivos:</strong> sin duda te resultará muy interesante ver el encuentro de motos antiguas MOTORETROGUARA donde se concentran motos con más de 40 años, un encuentro entre moteros donde prima la amistad y el buen rollo, donde se disfruta de una ruta (no competitiva) de unos 100km para perderte en la belleza de la <strong>Sierra de Guara</strong>.
+                                p Como no podría ser de otra manera, se realizan rutas de senderismo como el que nos lleva hasta el Valle de la Gloria, donde después podrás disfrutar de comida y buena conversación en convivencia.
+                                br
+                            div 
+                                figure
+                                    img(src="./img/motoretro.jpg" srcset="./img/motoretro.webp 1x, ./img/motoretro-1.webp 2x" alt="Motoretro" loading="lazy")
+                                    figcaption Moto retro - 
+                                        a(href="https://www.flickr.com/photos/tomasfano/7363087022/in/photolist-5M8yyq-7pGp7-88oBp4-88oBge-XogCL6-9DAGga-6ZUbEx-bFcZUq-cdDKff-87J56A-5gycL5-5fdbq2-rdAEH3-5gycoo-oN3fg6-86nwLX-oYyhAf-cfg6im-Tu8riG-rdAEP5-cdDBPG-oJ6jXF-LiXKuo-oAs4p7-LiXKqq-6aUXV7-6aQuJt-6aV2uJ-5gfQQU" target="_blank") desde flickr 
+                                        | Tomás Fano.
+                        div.section 
+                            div 
+                                p <strong>Eventos con niños:</strong> para los más peques puedes encontrar talleres como el Taller Papel Plantable con semillas medicinales del Somontano donde les enseñarán a reutilizar y reciclar. Otra de las actividades que se propone es La Noche de las Ánimas, un momento de misterio y tradición donde los más peques puede que pasen algo de miedo...
+                                br
+                            div 
+                                figure
+                                    img(src="./img/taller-papel.jpg" srcset="./img/taller-papel.webp 1x, ./img/taller-papel-1.webp 2x" alt="Papel plantable" loading="lazy")
+                                    figcaption Papel plantable - 
+                                        a(href="https://www.flickr.com/photos/75996677@N08/6927778268" target="_blank") desde flickr 
+                                        | Printhaus.
+                section.final
+                    article.epocaE 
+                        hr
+                        p Este breve resumen lo puedes completar en 
+                            a(href="https://guara.org/calendario-eventos/" target="_blank") este enlace  
+                            | donde podrás ver con más detalle de fechas y categorías los diferentes eventos que se realizar durante el año en la <strong>Sierra de Guara</strong>.
+                section.sigue 
+                    hr
+                    h3 Sigue disfrutando
+                    br
+                    div.navegando 
+                        div.navegando1    
+                            a(href="historia.pug") Historia de Nocito   
+                        div.navegando1
+                            a(href="sentidos.pug") Nocito con los sentidos  
+        footer: include footer.pug
+        script(src="./menu.js" async)
