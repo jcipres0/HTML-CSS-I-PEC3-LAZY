@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+//-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $sizescreen_00: 320px;
 $sizescreen_0: 428px;
@@ -13,7 +13,7 @@ $bg_color: rgb(247, 247, 247);
 $main-color: rgb(0, 59, 74);
 $font-primary:  'Lato', sans-serif;
 $font-secondary: 'Great Vibes', serif;
-$font-titles: 'Montserrat', serif;
+$font-titles: 'Montserrat', sans-serif;
 
 /*---- este sería código reutilizable  ----*/
 
@@ -339,7 +339,7 @@ a {
 }
 figcaption{
     font-size: .7rem;
-    color:grey;
+    color:$main-color;
     font-family: $font-titles;
 }
 h1, h2{
@@ -403,7 +403,14 @@ header {
 .titulo{
     display: none;
 }
-
+.cerrar-menu img{
+    width: 48px; 
+    height: 48px;
+}
+.abrir-menu img{
+    width: 48px; 
+    height: 48px;
+}
 .nav.visible {
     opacity: 1;
     visibility: visible;
@@ -510,6 +517,14 @@ footer ul li {
 .abrir-menu1:hover{
     cursor: pointer;
 }
+.abrir-menu1 img{
+    width: 48px; 
+    height: 48px;
+}
+.cerrar-menu1 img{
+    width: 48px; 
+    height: 48px;
+}
 .nav1 {
     opacity: 0;
     visibility: hidden;
@@ -584,6 +599,14 @@ footer ul li {
         width: 180px;
         height: auto;
     }
+    .abrir-menu1 img{
+        width: 48px; 
+        height: 48px;
+    }
+    .cerrar-menu1 img{
+        width: 48px; 
+        height: 48px;
+    }
     footer ul.legales li::after {
         content: " | ";
         padding-right: .5rem;
@@ -622,6 +645,14 @@ footer ul li {
     .abrir-menu1{
         font-size: 3rem;
         margin-left: 3.2rem;
+    }
+    .abrir-menu1 img{
+        width: 48px; 
+        height: 48px;
+    }
+    .cerrar-menu1 img{
+        width: 48px; 
+        height: 48px;
     }
     footer ul.legales li::after {
         content: " | ";
@@ -1165,6 +1196,15 @@ footer ul li {
 .section{
     margin-bottom: 1rem;
 }
+
+figcaption a{
+    color: blue;
+    font-weight: bold;
+}
+figcaption a:hover{
+    color: $titles_color;
+}
+
 @media (min-width: $sizescreen_2) and (max-width: $sizescreen_3){
 
     .section{
@@ -1185,6 +1225,13 @@ footer ul li {
     }
     .epocaE p{
         font-size: 1.2rem;
+    }
+    figcaption a{
+        color: blue;
+        font-weight: bold;
+    }
+    figcaption a:hover{
+        color: $titles_color;
     }
 }
 
@@ -1207,6 +1254,13 @@ footer ul li {
     }
     .epocaE p{
         font-size: 1.2rem;
+    }
+    figcaption a{
+        color: blue;
+        font-weight: bold;
+    }
+    figcaption a:hover{
+        color: $titles_color;
     }
 }
 /*----------- estilos para la página de presentación -----------*/

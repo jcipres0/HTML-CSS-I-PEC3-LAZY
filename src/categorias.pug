@@ -3,12 +3,12 @@ html(lang="es")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description",content="Categorias del sitio web")
         link(rel="icon" type="image/png" href="./img/montanas.svg")
         title Nocito 
         link(rel="stylesheet", href="./styles/styles.scss")
-          //-para usar los iconos de bootstrap
+        link(rel="stylesheet", href="./styles/fonts.scss")
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     body 
         header: include header.pug 
         main
@@ -34,7 +34,7 @@ html(lang="es")
                                 defs
                                     filter#myShadow
                                         feDropShadow(dx="2" dy="2" stdDeviation="4" flood-color="black" flood-opacity="0.5")
-                                image(href="./img/historiax600.svg" width="100%" height="100%" filter="url(#myShadow)" loading="lazy")     
+                                image(href="./img/historiax600.svg" width="100%" height="100%" filter="url(#myShadow)")     
                     div.indi 
                         a.box(href="sentidos.pug")
                             h2.titulo Con los sentidos 

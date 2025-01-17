@@ -3,18 +3,18 @@ html(lang="es")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description",content="Sitio que presenta la localidad de Nocito")
         link(rel="icon" type="image/png" href="./img/montanas.svg")
         title Nocito 
-        link(rel="stylesheet", href="styles/styles.scss")
-        //-para usar los iconos de bootstrap
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+        link(rel="stylesheet", href="styles/styles.scss")
+        link(rel="stylesheet", href="./styles/fonts.scss")
+        
         //-uso de la API de mapkcik para situar en el mapa Nocito
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet"/>
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
         <script src="./mapkick.js"></script>
         <script>mapboxgl.accessToken = "pk.eyJ1IjoibG1lbnRhbDE2IiwiYSI6ImNtMmtvZjh3aDAzaG8ycXM5ZDB2ajA5eDYifQ.WWX3kQ_2JedUKdmp_nQr6Q"</script>
-
     body 
         header: include header.pug 
         main
@@ -51,9 +51,9 @@ html(lang="es")
                         h2 descúbrelo, pulsa en la imagen
                         br
                     div.cls-boton
-                        a.boton(href="./categorias.pug") 
+                        a.boton(href="./categorias.pug" aria-label="Ir a categorias") 
                 <div id="map"></div>
-                <script>new Mapkick.Map("map", [{latitude: 42.320626, longitude: -0.254281}],{zoom: 8, controls: true})</script>
+                <script src="./carga_map.js"></script>
             section.comentarios 
                 div.titulo: h2 ¿Qué opina la gente?
                         br  
@@ -68,6 +68,6 @@ html(lang="es")
                         p Terminamos comiendo muy bien en uno de los dos sitios que hay para comer, gente muy maja y atenta, sin duda un buen rato.
                         p Me gustaría terminar comentando la cantidad de setas que vimos por los senderos!! a mi hijo pequeño le encantó ver tantas y por cierto, la carretera de llegada es mala así que es aconsejable tomar algo para los mareos antes de emprender viaje.
         footer: include footer.pug
-        script(type="module" src="./app.js" async)
+        script(type="module" src="./app.js" defer)
         script(type="module" src="./menu.js" defer)
         
